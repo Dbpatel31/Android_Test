@@ -30,7 +30,7 @@ class OtpActivity : AppCompatActivity() {
 
     private fun postData(){
         val retrofit= Retrofit. Builder().addConverterFactory(GsonConverterFactory.create()).build().create(ApiService::class.java)
-        val request= PostOtp("+19099968325","1234")
+        val request= PostOtp("+19099968325")
         val retrodata= retrofit.getOtp(request)
 
         retrodata.enqueue(object : Callback<List<OtpModel>>{
