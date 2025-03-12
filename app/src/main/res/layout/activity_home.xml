@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoutimag"
+        app:civ_border_width="4dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/main"
+        app:civ_border_color="#FF000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jenny_WilSon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Using science to optimize my workouts! Tracking progress, sharing fitness knowledge, and aiming for peak performance."
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga"
+            android:padding="15dp"
+            android:layout_marginStart="120dp"
+            android:background="@color/cardview_shadow_end_color"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout"
+            android:padding="15dp"
+            android:background="@color/cardview_shadow_end_color"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dieting"
+            android:padding="15dp"
+            android:background="@color/cardview_shadow_end_color"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:layout_gravity="center"/>
+</LinearLayout>
