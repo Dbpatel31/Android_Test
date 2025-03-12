@@ -59,10 +59,10 @@ class OtpActivity : AppCompatActivity() {
            withContext(Dispatchers.Main){
                val bundle=Bundle()
 //               bundle.putString("name", retrodata.body()?.data?.username.toString())
-               bundle.putInt("latitude",retrodata.body()?.data?.latitude!!.toInt())
-               bundle.putInt("longitude",retrodata.body()?.data?.longitude!!.toInt())
-              val intent= Intent(this@OtpActivity,PermissionActivity::class.java)
-               intent.putExtras(bundle)
+//               bundle.putInt("latitude",retrodata.body()?.data?.latitude!!.toInt())
+//               bundle.putInt("longitude",retrodata.body()?.data?.longitude!!.toInt())
+              val intent= Intent(this@OtpActivity,RecyclerActivity::class.java)
+//               intent.putExtras(bundle)
                startActivity(intent)
            }
         }

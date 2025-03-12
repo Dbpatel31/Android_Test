@@ -31,13 +31,13 @@ class EditActivity : AppCompatActivity() {
        val next= findViewById<Button>(R.id.next)
         val teblayout= findViewById<TabLayout>(R.id.teblayout)
 
-        viewpager.adapter= ViewpagerAdapter(supportFragmentManager,this)
-
-        TabLayoutMediator(teblayout,viewpager){
-            tab, position->
-            if(position==2){
-                next.setText("Submit")
-            }
-        }.attach()
+//        viewpager.adapter= ViewpagerAdapter(supportFragmentManager,this)
+//
+//        TabLayoutMediator(teblayout,viewpager){
+//            tab, position->
+//            if(position==2){
+//                next.setText("Submit")
+//            }
+//        }.attach()
     }
 }
