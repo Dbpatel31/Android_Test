@@ -25,12 +25,13 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         />
-     <TextView
-         android:layout_width="wrap_content"
+     <EditText
+         android:id="@+id/verifyEditText"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:background="@drawable/otp"
          android:layout_margin="10dp"
          android:padding="10dp"
+         android:inputType="text"
          android:layout_gravity="center"/>
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/continuebtn"
+            android:id="@+id/verificationbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Verification"

@@ -31,19 +31,20 @@ class SplashActivity : AppCompatActivity() {
         if (sharedPreferences.getBoolean(IS_LOGGIN, true)) {
             Handler(Looper.getMainLooper()).postDelayed(
                 Runnable {
-                    val intent = Intent(this, OtpActivity::class.java)
+                    val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                 },
                 3000
             )
         }
         else{
-
-                    val intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
-
-
-
+                Handler(Looper.getMainLooper()).postDelayed(
+                    Runnable {
+                        val intent = Intent(this, LoginActivity::class.java)
+                        startActivity(intent)
+                    },
+                    3000
+                )
         }
     }
 }

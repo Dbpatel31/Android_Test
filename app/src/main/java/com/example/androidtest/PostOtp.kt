@@ -1,6 +1,16 @@
 package com.example.androidtest
 
-data class PostOtp(
-    val contact_number:String,
-    val otp : String
+import com.google.gson.annotations.SerializedName
+
+data class ExampleJson2KtKotlin (
+
+    @SerializedName("data" ) var data : String? = null,
+    @SerializedName("meta" ) var meta : Meta?   = Meta()
+
+)
+
+data class Meta (
+
+    @SerializedName("message" ) var message : String? = null
+
 )
